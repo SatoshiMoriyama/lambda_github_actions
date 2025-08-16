@@ -25,6 +25,8 @@ jobs:
         run: |
           # Install dependencies
           pip install -r requirements.txt -t ./dist
+          # Move source file
+          mv lambda_function.py ./dist
 
       - name: Deploy Lambda Function
         uses: aws-actions/aws-lambda-deploy@v1
