@@ -25,4 +25,5 @@ jobs:
         uses: aws-actions/aws-lambda-deploy@v1
         with:
           function-name: my-lambda-function
+          role: ${{LAMBDA_ROLE_ARN}}
           code-artifacts-dir: ./
