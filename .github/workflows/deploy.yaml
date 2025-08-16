@@ -36,4 +36,4 @@ jobs:
           runtime: python3.12
           handler: lambda_function.handler
           role: ${{vars.LAMBDA_ROLE_ARN}}
-          code-artifacts-dir: ./
+          code-artifacts-dir: ./dist
