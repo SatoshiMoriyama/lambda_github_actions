@@ -1,6 +1,6 @@
 import requests
 
-def lambda_handler(event, context):
+def handler(event, context):
     response = requests.get('https://api.github.com/zen')
     return {
         'statusCode': 200,
