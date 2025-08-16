@@ -25,5 +25,7 @@ jobs:
         uses: aws-actions/aws-lambda-deploy@v1
         with:
           function-name: my-lambda-function
+          runtime: Python 3.11
+          handler: lambda_function.handler
           role: ${{vars.LAMBDA_ROLE_ARN}}
           code-artifacts-dir: ./
